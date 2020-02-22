@@ -15,20 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLO-3i-cn2">
-                                <rect key="frame" x="-2" y="303" width="418" height="290"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLO-3i-cn2" customClass="CustomVideoPlayerView" customModule="SimpleVideoPlayerDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="414" width="414" height="448"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yLO-3i-cn2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.00966" id="6YV-Db-5wn"/>
-                            <constraint firstItem="yLO-3i-cn2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.323661" id="PZW-kL-GTR"/>
-                            <constraint firstItem="yLO-3i-cn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iwa-TU-AGi"/>
-                            <constraint firstItem="yLO-3i-cn2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x75-Sv-bdK"/>
+                            <constraint firstItem="yLO-3i-cn2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Jni-bf-74A"/>
+                            <constraint firstItem="yLO-3i-cn2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aqg-1l-cAz"/>
+                            <constraint firstItem="yLO-3i-cn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xUU-gE-93e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yLO-3i-cn2" secondAttribute="bottom" id="y2r-Ph-Eh9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="videoView" destination="yLO-3i-cn2" id="d04-1p-aIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
